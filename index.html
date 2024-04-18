@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .login-container {
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    h1 {
+      color: #1DB954;
+    }
+
+    button {
+      background-color: #1DB954;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    button:hover {
+      background-color: #1ed760;
+    }
+
+    button:active {
+      background-color: #19a94d;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Spotify Login</h1>
+    <button id="login-btn">Login with Spotify</button>
+  </div>
+
+  <script>
+    document.getElementById('login-btn').addEventListener('click', function() {
+      // Redirect to Spotify login page
+      window.location.href = 'https://accounts.spotify.com/authorize?client_id=ab96ff4985864654b8dbc3b26b402f52&response_type=code&redirect_uri=https://birkpb.github.io/Fikmi/dashboard.html';
+    });
+  </script>
+</body>
+</html>
